@@ -1,0 +1,73 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url('../img/blur-background.jpg');
+  color: #fff;
+}
+
+/*===========================JUMBOTRON=========================*/
+.logo {
+  height: 300px;
+}
+
+h2 {
+  font-family: 'Bungee', cursive;
+  margin-top: 3em;
+}
+
+.top {
+  margin-top: 8em;
+}
+
+/*==================BUTTONS================*/
+.btn-default, {
+  background-color: white;
+  border-color: black;
+  color: black;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn-default:hover, .btn-default:active, .btn-default:after {
+  background-color: white;
+}
+
+.btn-default span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-default span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  color: black;
+}
+
+.btn-default:hover span {
+  padding-right: 25px;
+  color: black;
+}
+
+.btn-default:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn:focus, .btn:active, .btn:visited {
+      outline: 0px auto -webkit-focus-ring-color;
+}
+
+.btn-default:focus, .btn-default:active, .btn-default:visited {
+  background-color: #fff;
+  outline: 0px;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none;
+}
